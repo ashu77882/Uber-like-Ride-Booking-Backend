@@ -42,14 +42,14 @@ public class ReviewService implements CommandLineRunner {
 
 
         System.out.print(r);
-        reviewRepository.save(r);
+
         bookingRepository.save(b);
 
         System.out.println(r.getContent());
         List<Review> reviews = reviewRepository.findAll();
 
         for (Review review : reviews){
-            System.out.println(r.getContent());
+            System.out.println(review.getContent());
         }
 
     }
