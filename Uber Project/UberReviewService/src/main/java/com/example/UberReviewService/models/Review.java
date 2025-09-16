@@ -2,11 +2,6 @@ package com.example.UberReviewService.models;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
-import java.util.Date;
 
 @Getter
 @Setter
@@ -14,8 +9,8 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "bookingreview")
-
+@Table(name = "booking_review")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Review extends BaseModel{
 
 
