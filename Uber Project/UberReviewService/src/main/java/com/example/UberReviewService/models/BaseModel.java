@@ -12,7 +12,7 @@ import java.util.Date;
 public abstract class BaseModel {
 
     @Id //this annotation defines primary key our table
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //Identity :- means auto_increment id value
+    @GeneratedValue(strategy = GenerationType.IDENTITY  ) //Identity :- means auto_increment id value
     private Long id;
 
 
