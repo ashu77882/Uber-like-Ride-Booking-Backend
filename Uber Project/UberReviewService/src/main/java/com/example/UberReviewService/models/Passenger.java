@@ -19,4 +19,6 @@ public class Passenger extends BaseModel{
 
     @OneToMany(mappedBy = "passenger")
     private List<Booking> bookings= new ArrayList<>();
+
+
 }
