@@ -1,6 +1,5 @@
-package com.example.UberReviewService.Repositories;
+package com.example.UberReviewService.repositories;
 
-import com.example.UberReviewService.models.Booking;
 import com.example.UberReviewService.models.Driver;
 import org.springframework.data.jpa.repository.JpaRepository;
 

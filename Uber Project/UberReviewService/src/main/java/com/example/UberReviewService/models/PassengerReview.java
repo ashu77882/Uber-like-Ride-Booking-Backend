@@ -8,7 +8,7 @@ import jakarta.persistence.Entity;
 public class PassengerReview extends Review{
 
     @Column(nullable = false)
-    private String passengerReviewComment;
+    private String passengerReviewContent;
 
     @Column(nullable = false)
     private String passengerRating;
