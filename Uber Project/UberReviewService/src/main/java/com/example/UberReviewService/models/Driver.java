@@ -21,6 +21,8 @@ public class Driver extends BaseModel{
     @Column(nullable = false , unique = true)
     private String licenseNumber;
 
+    private String phoneNumber;
+
     //1:n , Driver has many Booking
     @OneToMany(mappedBy = "driver")
     private List<Booking> bookings = new ArrayList<>();

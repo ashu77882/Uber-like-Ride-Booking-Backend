@@ -1,6 +1,7 @@
 package com.example.UberReviewService.models;
-
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -9,20 +10,20 @@ import java.util.Date;
 
 @EntityListeners(AuditingEntityListener.class)
 @MappedSuperclass
+@Getter
+@Setter
 public abstract class BaseModel {
-
-    @Id //this annotation defines primary key our table
-    @GeneratedValue(strategy = GenerationType.IDENTITY  ) //Identity :- means auto_increment id value
-    private Long id;
-
+    @Id // this annotation makes the id property a primary key of our table
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Identity means auto_increment
+    protected Long id;
 
     @Column(nullable = false)
-    @Temporal(TemporalType.TIMESTAMP) // this describes the format of date object to be stored in time, date or both(timestamp)
-    @CreatedDate //this annotation say's to only handle it for object creation
+    @Temporal(TemporalType.TIMESTAMP) // this annotation tells spring about the formats of Date object to be stored i.e. Date / Time ? Timestamp
+    @CreatedDate // this annotation tells spring that only handle it for object creation
     protected Date createdAt;
 
     @Column(nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    @LastModifiedDate //this annotation say's to only handle it for object update
+    @LastModifiedDate  // this annotation tells spring that only handle it for object update
     protected Date updatedAt;
 }
