@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/RideBookingProject.iml" filepath="$PROJECT_DIR$/.idea/RideBookingProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UberProject-ReviewService.iml" filepath="$PROJECT_DIR$/.idea/UberProject-ReviewService.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberReviewService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberReviewService.main.iml" />
     </modules>
   </component>
